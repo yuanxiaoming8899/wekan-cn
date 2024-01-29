@@ -1,133 +1,76 @@
-[Gitpod Ready-to-Code](https://gitpod.io/#https://github.com/wekan/wekan)
-
-# WeKan ® - Open Source kanban
-
-## Downloads
-
-https://wekan.github.io / Install WeKan ® Server
-
-## Docker Containers
-
-- [GitHub](https://github.com/wekan/wekan/pkgs/container/wekan)
-- [Quay](https://quay.io/repository/wekan/wekan)
-- [Docker Hub](https://hub.docker.com/r/wekanteam/wekan)
-
-docker-compose.yml at https://github.com/wekan/wekan
-
-## Standards
-
-- [WeKan and Standard for Public Code](https://wekan.github.io/standard-for-public-code/) assessment was made at 2023-11.
-  Currently Wekan meets 8 out of 16 criteria out of the box.
-  Some others could be met with small changes.
-
-## Code stats
-
-- [CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4619)
-- [Code Climate](https://codeclimate.com/github/wekan/wekan)
-- [Open Hub](https://www.openhub.net/p/wekan)
-- [OSS Insight](https://ossinsight.io/analyze/wekan/wekan)
-
-## [Translate WeKan ® at Transifex](https://app.transifex.com/wekan/)
-
-Translations to non-English languages are accepted only at [Transifex](https://app.transifex.com/wekan/) using webbrowser.
-New English strings of new features can be added as PRs to master branch file wekan/imports/i18n/data/en.i18n.json .
-
-## [WeKan ® feature requests and bugs](https://github.com/wekan/wekan/issues)
-
-Please add most of your questions as GitHub issue: [WeKan ® Feature Requests and Bugs](https://github.com/wekan/wekan/issues).
-It's better than at chat where details get lost when chat scrolls up.
-
-## Chat
-
-[Discussions][discussions] - WeKan Community GitHub Discussions, that are not [Feature Requests and Bugs](https://github.com/wekan/wekan/issues).
-
-[WeKan IRC FAQ](https://github.com/wekan/wekan/wiki/IRC-FAQ)
-
-## Docker: Latest tag has newest release
-
-You can use latest tag to get newest release tag.
-See bottom of https://github.com/wekan/wekan/issues/3874
-
-## FAQ
-
-**NOTE**:
-- Please read the [FAQ](https://github.com/wekan/wekan/wiki/FAQ) first
-- Please don't feed the [trolls](https://github.com/wekan/wekan/wiki/FAQ#why-am-i-called-a-troll) and [spammers](https://github.com/wekan/wekan/wiki/FAQ#why-am-i-called-a-spammer) that are mentioned in the FAQ :)
-
-## About WeKan ®
-
-WeKan ® is an completely [Open Source][open_source] and [Free software][free_software]
-collaborative kanban board application with MIT license.
-
-Whether you’re maintaining a personal todo list, planning your holidays with some friends,
-or working in a team on your next revolutionary idea, Kanban boards are an unbeatable tool
-to keep your things organized. They give you a visual overview of the current state of your project,
-and make you productive by allowing you to focus on the few items that matter the most.
-
-Since WeKan ® is a free software, you don’t have to trust us with your data and can
-install Wekan on your own computer or server. In fact we encourage you to do
-that by providing one-click installation on various platforms.
-
-- WeKan ® is used in [most countries of the world](https://snapcraft.io/wekan).
-- WeKan ® largest user has 30k users using WeKan ® in their company.
-- WeKan ® has been [translated](https://app.transifex.com/wekan/) to about 105 languages.
-- [Features][features]: WeKan ® has real-time user interface.
-- [Platforms][platforms]: WeKan ® supports many platforms.
-  WeKan ® is critical part of new platforms Wekan is currently being integrated to.
-
-## Requirements
-
-- 64bit: Linux [Snap](https://github.com/wekan/wekan-snap/wiki/Install) or [Sandstorm](https://sandstorm.io) /
-  [Mac](https://github.com/wekan/wekan/wiki/Mac) / [Windows](https://github.com/wekan/wekan/wiki/Install-Wekan-from-source-on-Windows).
-  [More Platforms](https://github.com/wekan/wekan/wiki/Platforms), bundle for RasPi3 ARM and other CPUs where Node.js and MongoDB exists.
-- 1 GB RAM minimum free for WeKan ®. Production server should have minimum total 4 GB RAM.
-  For thousands of users, for example with [Docker](https://github.com/wekan/wekan/blob/main/docker-compose.yml): 3 frontend servers,
-  each having 2 CPU and 2 wekan-app containers. One backend wekan-db server with many CPUs.
-- Enough disk space and alerts about low disk space. If you run out disk space, MongoDB database gets corrupted.
-- SECURITY: Updating to newest WeKan ® version very often. Please check you do not have automatic updates of Sandstorm or Snap turned off.
-  Old versions have security issues because of old versions Node.js etc. Only newest WeKan ® is supported.
-  WeKan ® on Sandstorm is not usually affected by any Standalone WeKan ® (Snap/Docker/Source) security issues.
-- [Reporting all new bugs immediately](https://github.com/wekan/wekan/issues).
-  New features and fixes are added to WeKan ® [many times a day](https://github.com/wekan/wekan/blob/main/CHANGELOG.md).
-- [Backups](https://github.com/wekan/wekan/wiki/Backup) of WeKan ® database once a day miminum.
-  Bugs, updates, users deleting list or card, harddrive full, harddrive crash etc can eat your data. There is no undo yet.
-  Some bug can cause WeKan ® board to not load at all, requiring manual fixing of database content.
-
-## Roadmap and Demo
-
-[Roadmap][roadmap_wekan] - Public read-only board at WeKan ® demo.
-
-[Developer Documentation][dev_docs]
-
-- There is many companies and individuals contributing code to WeKan ®, to add features and bugfixes
-  [many times a day](https://github.com/wekan/wekan/blob/main/CHANGELOG.md).
-- [Please add Add new Feature Requests and Bug Reports immediately](https://github.com/wekan/wekan/issues).
-- [Commercial Support](https://wekan.team/commercial-support/).
-
-We also welcome sponsors for features and bugfixes.
-By working directly with WeKan ® you get the benefit of active maintenance and new features added by growing WeKan ® developer community.
-
-## Screenshot
-
-[More screenshots at Features page](https://github.com/wekan/wekan/wiki/Features)
-
-[![Screenshot of WeKan ®][screenshot_wekan]][roadmap_wekan]
-
-## License
-
-WeKan ® is released under the very permissive [MIT license](LICENSE), and made
-with [Meteor](https://www.meteor.com).
-
-[platforms]: https://github.com/wekan/wekan/wiki/Platforms
-[dev_docs]: https://github.com/wekan/wekan/wiki/Developer-Documentation
-[screenshot_wekan]: https://wekan.github.io/wekan-dark-mode.png
-[features]: https://github.com/wekan/wekan/wiki/Features
-[roadmap_wekan]: https://boards.wekan.team/b/D2SzJKZDS4Z48yeQH/wekan-open-source-kanban-board-with-mit-license
-[wekan_issues]: https://github.com/wekan/wekan/issues
-[wekan_issues]: https://github.com/wekan/wekan/issues
-[docker_image]: https://hub.docker.com/r/wekanteam/wekan/
-[wekan_wiki]: https://github.com/wekan/wekan/wiki
-[translate_wekan]: https://app.transifex.com/wekan/
-[open_source]: https://en.wikipedia.org/wiki/Open-source_software
-[free_software]: https://en.wikipedia.org/wiki/Free_software
-[discussions]: https://github.com/wekan/wekan/discussions
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://gitpod.io/#https://github.com/wekan/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gitpod 准备编码</font></font></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-wekan----open-source-kanban" class="anchor" aria-hidden="true" tabindex="-1" href="#wekan----open-source-kanban"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® - 开源看板</font></font></h1>
+<h2 tabindex="-1" dir="auto"><a id="user-content-downloads" class="anchor" aria-hidden="true" tabindex="-1" href="#downloads"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></h2>
+<p dir="auto"><a href="https://wekan.github.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://wekan.github.io</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / 安装WeKan® 服务器</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-docker-containers" class="anchor" aria-hidden="true" tabindex="-1" href="#docker-containers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker容器</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/wekan/wekan/pkgs/container/wekan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a></li>
+<li><a href="https://quay.io/repository/wekan/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">码头</font></font></a></li>
+<li><a href="https://hub.docker.com/r/wekanteam/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">码头工人中心</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">docker-compose.yml 位于</font></font><a href="https://github.com/wekan/wekan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/wekan/wekan</font></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-standards" class="anchor" aria-hidden="true" tabindex="-1" href="#standards"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标准</font></font></h2>
+<ul dir="auto">
+<li><a href="https://wekan.github.io/standard-for-public-code/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微看和公共代码评估标准</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">于2023年11月制定。</font><font style="vertical-align: inherit;">目前，Wekan 满足 16 项开箱即用标准中的 8 项。</font><font style="vertical-align: inherit;">其他一些可能会遇到一些小的变化。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-code-stats" class="anchor" aria-hidden="true" tabindex="-1" href="#code-stats"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码统计</font></font></h2>
+<ul dir="auto">
+<li><a href="https://bestpractices.coreinfrastructure.org/projects/4619" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CII 最佳实践</font></font></a></li>
+<li><a href="https://codeclimate.com/github/wekan/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">气候规范</font></font></a></li>
+<li><a href="https://www.openhub.net/p/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开放集线器</font></font></a></li>
+<li><a href="https://ossinsight.io/analyze/wekan/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">操作系统洞察</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-translate-wekan--at-transifex" class="anchor" aria-hidden="true" tabindex="-1" href="#translate-wekan--at-transifex"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><a href="https://app.transifex.com/wekan/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Transifex 翻译 WeKan ®</font></font></a></h2>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://app.transifex.com/wekan/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅Transifex</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用网络浏览器接受非英语翻译</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">新功能的新英文字符串可以作为 PR 添加到主分支文件 wekan/imports/i18n/data/en.i18n.json 。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-wekan--feature-requests-and-bugs" class="anchor" aria-hidden="true" tabindex="-1" href="#wekan--feature-requests-and-bugs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><a href="https://github.com/wekan/wekan/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 功能请求和错误</font></font></a></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请将您的大部分问题添加为 GitHub 问题：</font></font><a href="https://github.com/wekan/wekan/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 功能请求和错误</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">这比聊天时要好，因为聊天时向上滚动时细节会丢失。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-chat" class="anchor" aria-hidden="true" tabindex="-1" href="#chat"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聊天</font></font></h2>
+<p dir="auto"><a href="https://github.com/wekan/wekan/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- WeKan 社区 GitHub 讨论，不是</font></font><a href="https://github.com/wekan/wekan/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能请求和错误</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><a href="https://github.com/wekan/wekan/wiki/IRC-FAQ"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微看IRC常见问题解答</font></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-docker-latest-tag-has-newest-release" class="anchor" aria-hidden="true" tabindex="-1" href="#docker-latest-tag-has-newest-release"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker：最新标签有最新版本</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用最新标签来获取最新的发布标签。</font><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="928692714" data-permission-text="Title is private" data-url="https://github.com/wekan/wekan/issues/3874" data-hovercard-type="issue" data-hovercard-url="/wekan/wekan/issues/3874/hovercard" href="https://github.com/wekan/wekan/issues/3874"><font style="vertical-align: inherit;">请参阅#3874</font></a><font style="vertical-align: inherit;">的底部</font></font><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="928692714" data-permission-text="Title is private" data-url="https://github.com/wekan/wekan/issues/3874" data-hovercard-type="issue" data-hovercard-url="/wekan/wekan/issues/3874/hovercard" href="https://github.com/wekan/wekan/issues/3874"><font style="vertical-align: inherit;"></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-faq" class="anchor" aria-hidden="true" tabindex="-1" href="#faq"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常问问题</font></font></h2>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">笔记</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请先</font><font style="vertical-align: inherit;">阅读</font></font><a href="https://github.com/wekan/wekan/wiki/FAQ"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见问题解答</font></font></a><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请不要向</font><font style="vertical-align: inherit;">常见问题解答中提到的</font></font><a href="https://github.com/wekan/wekan/wiki/FAQ#why-am-i-called-a-troll"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">巨魔</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/wekan/wekan/wiki/FAQ#why-am-i-called-a-spammer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">垃圾邮件发送者提供信息:)</font></font></a><font style="vertical-align: inherit;"></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-about-wekan-" class="anchor" aria-hidden="true" tabindex="-1" href="#about-wekan-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于维看®</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 是一个完全</font></font><a href="https://en.wikipedia.org/wiki/Open-source_software" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://en.wikipedia.org/wiki/Free_software" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免费的软件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+协作看板应用程序，具有 MIT 许可证。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论您是维护个人待办事项列表、与朋友计划假期，还是与团队合作实现下一个革命性想法，看板都是让您的事情井井有条的无与伦比的工具。</font><font style="vertical-align: inherit;">它们为您提供项目当前状态的直观概览，并让您专注于最重要的几个项目，从而提高您的工作效率。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于WeKan ® 是一款免费软件，因此您不必将您的数据托付给我们，并且可以在您自己的计算机或服务器上安装Wekan。</font><font style="vertical-align: inherit;">事实上，我们鼓励您通过在各种平台上提供一键安装来做到这一点。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://snapcraft.io/wekan" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan® 在世界上大多数国家</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 最大的用户有3万名用户在他们的公司使用WeKan ® 。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 已被</font></font><a href="https://app.transifex.com/wekan/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成约 105 种语言。</font></font></li>
+<li><a href="https://github.com/wekan/wekan/wiki/Features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特点</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">： WeKan ® 具有实时用户界面。</font></font></li>
+<li><a href="https://github.com/wekan/wekan/wiki/Platforms"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">平台</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：WeKan ® 支持许多平台。</font><font style="vertical-align: inherit;">WeKan ® 是 Wekan 目前正在集成的新平台的重要组成部分。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-requirements" class="anchor" aria-hidden="true" tabindex="-1" href="#requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要求</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">64 位：Linux </font></font><a href="https://github.com/wekan/wekan-snap/wiki/Install"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Snap</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://sandstorm.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sandstorm</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> /
+ </font></font><a href="https://github.com/wekan/wekan/wiki/Mac"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mac</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / </font></font><a href="https://github.com/wekan/wekan/wiki/Install-Wekan-from-source-on-Windows"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+</font></font><a href="https://github.com/wekan/wekan/wiki/Platforms"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多平台</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，针对 RasPi3 ARM 以及 Node.js 和 MongoDB 存在的其他 CPU 的捆绑包。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 至少可免费使用 1 GB RAM。</font><font style="vertical-align: inherit;">生产服务器至少应具有 4 GB RAM。</font><font style="vertical-align: inherit;">对于数千个用户，例如使用</font></font><a href="https://github.com/wekan/wekan/blob/main/docker-compose.yml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：3 个前端服务器，每个服务器有 2 个 CPU 和 2 个 wekan-app 容器。</font><font style="vertical-align: inherit;">一台具有多个 CPU 的后端 wekan-db 服务器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">足够的磁盘空间和有关磁盘空间不足的警报。</font><font style="vertical-align: inherit;">如果磁盘空间耗尽，MongoDB 数据库就会损坏。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全：经常更新到最新的WeKan ® 版本。</font><font style="vertical-align: inherit;">请检查您是否关闭了 Sandstorm 或 Snap 的自动更新。</font><font style="vertical-align: inherit;">由于旧版本的 Node.js 等，旧版本存在安全问题。仅支持最新的 WeKan ® 。</font><font style="vertical-align: inherit;">Sandstorm 上的 WeKan ® 通常不会受到任何独立 WeKan ® （Snap/Docker/Source）安全问题的影响。</font></font></li>
+<li><a href="https://github.com/wekan/wekan/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">立即报告所有新错误</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://github.com/wekan/wekan/blob/main/CHANGELOG.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新功能和修复每天</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会多次添加到 WeKan® 中</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><a href="https://github.com/wekan/wekan/wiki/Backup"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan ® 数据库每天至少</font><a href="https://github.com/wekan/wekan/wiki/Backup"><font style="vertical-align: inherit;">备份一次。</font></a><font style="vertical-align: inherit;">错误、更新、用户删除列表或卡、硬盘已满、硬盘崩溃等都会消耗您的数据。</font><font style="vertical-align: inherit;">尚无法撤消。</font><font style="vertical-align: inherit;">某些错误可能会导致 WeKan ® 板根本无法加载，需要手动修复数据库内容。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-roadmap-and-demo" class="anchor" aria-hidden="true" tabindex="-1" href="#roadmap-and-demo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图和演示</font></font></h2>
+<p dir="auto"><a href="https://boards.wekan.team/b/D2SzJKZDS4Z48yeQH/wekan-open-source-kanban-board-with-mit-license" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- WeKan ® 演示中的公共只读板。</font></font></p>
+<p dir="auto"><a href="https://github.com/wekan/wekan/wiki/Developer-Documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者文档</font></font></a></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有许多公司和个人向WeKan® 贡献代码，
+</font></font><a href="https://github.com/wekan/wekan/blob/main/CHANGELOG.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每天多次</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加功能和错误修复。</font></font></li>
+<li><a href="https://github.com/wekan/wekan/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请立即添加添加新功能请求和错误报告</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><a href="https://wekan.team/commercial-support/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商业支持</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们也欢迎赞助商提供功能和错误修复。</font><font style="vertical-align: inherit;">通过直接与 WeKan ® 合作，您将受益于主动维护以及不断壮大的 WeKan ® 开发者社区所添加的新功能。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-screenshot" class="anchor" aria-hidden="true" tabindex="-1" href="#screenshot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截屏</font></font></h2>
+<p dir="auto"><a href="https://github.com/wekan/wekan/wiki/Features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多屏幕截图请参见“功能”页面</font></font></a></p>
+<p dir="auto"><a href="https://boards.wekan.team/b/D2SzJKZDS4Z48yeQH/wekan-open-source-kanban-board-with-mit-license" rel="nofollow"><img src="https://camo.githubusercontent.com/89287c48bd85b1fb52751235d10ca0528a15078df6c09f7c9263f705febbe97c/68747470733a2f2f77656b616e2e6769746875622e696f2f77656b616e2d6461726b2d6d6f64652e706e67" alt="微看®截图" data-canonical-src="https://wekan.github.io/wekan-dark-mode.png" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" tabindex="-1" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WeKan® 是在非常宽松的</font></font><a href="/wekan/wekan/blob/main/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MIT 许可证</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下发布的，并使用</font></font><a href="https://www.meteor.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Meteor</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作。</font></font></p>
+</article></div>
